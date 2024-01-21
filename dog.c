@@ -14,7 +14,12 @@ static void
 usage(const char *program_name)
 {
     if (program_name) {
-        printf("usage: %s file ...\n", program_name);
+        printf("Usage: %s [OPTION] [FILE]...\n", program_name);
+        printf("Concatenate file(s) to standard output with a delay between each character\n\n");
+
+        printf("  FILE: File to be written to standard output. Define multiple to concatenate them.\n");
+        printf("  Options:\n");
+        printf("    -h, --help: Display this menu.\n");
     }
 }
 
